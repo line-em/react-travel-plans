@@ -137,9 +137,9 @@ a:hover {
 	flex-shrink: 0;
 }
 
-/* :is(.places__extraInfo__span-items, .places__extraInfo__normal-items) > svg {
+:is(.places__extraInfo__span-items, .places__extraInfo__normal-items) > svg {
 	margin-inline-end: var(--small-value);
-} */
+}
 
 :is(.places__extraInfo__normal-items, .places__extraInfo__span-items) p {
 	display: flex;
@@ -170,11 +170,16 @@ a:hover {
 	.places__extraInfo--mobile {
 		display: block;
 	}
+
 	.places__extraInfo__normal-items,
 	.places__extraInfo__span-items {
 		flex: auto;
 		justify-content: center;
 		text-align: center;
 		flex-wrap: wrap;
+	}
+
+	:is(.places__extraInfo__span-items, .places__extraInfo__normal-items) > svg {
+		margin-inline-end: 0;
 	}
 }
