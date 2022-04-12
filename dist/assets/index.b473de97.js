@@ -8877,7 +8877,7 @@ const md = () =>
 					O("div", {
 						className: "places__image",
 						children: [
-							p("img", { src: `../src/imgs/${e.image}`, alt: e.city }),
+							p("img", { src: `./src/imgs/${e.image}`, alt: e.city }),
 							p("div", {
 								className: "places__image__location--desktop",
 								children: O("div", {

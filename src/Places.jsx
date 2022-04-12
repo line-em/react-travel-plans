@@ -12,7 +12,7 @@ const Places = (props) => {
 				}}
 			>
 				<div className="places__image">
-					<img src={`../src/imgs/${props.image}`} alt={props.city} />
+					<img src={`./src/imgs/${props.image}`} alt={props.city} />
 					<div className="places__image__location--desktop">
 						<div className="places__extraInfo__span-items">
 							<MapPinLine />
